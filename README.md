@@ -11,13 +11,18 @@ Tens enunciat i pistes a:
   * https://bytes.cat/python_web
   * https://bytes.cat/python_web_test
 
-Per desenvolupar (primer cop, després només cal el `source`):
+Per a inicialitzar:
 
     $ python3 -m venv env
     $ source env/bin/activate
     (env) $ pip install -r requirements.txt
 
-Per provar els tests:
+Per a desenvolupar, crear arxiu `hello.py` i fer:
+
+    $ source env/bin/activate
+    (env) flask --app hello run
+
+Per a provar els tests:
 
     (env) $ pytest --driver Firefox .test
 
